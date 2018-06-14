@@ -8,14 +8,10 @@
 
 }
 
-@media only screen and (max-width:1430px) {
+@media only screen and (max-width: 1140px) { 
     .container {
         max-width: 100%;
     }
-
-}
-@media only screen and (max-width: 1279px) { 
-    
 }
 
 /* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
