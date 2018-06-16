@@ -52,14 +52,14 @@
         scrollSpeed: 900,
         scrollEasing: 'swing',
         scrollingEasing: 'swing',
-        offset: 80
+        offset: 50
     });
 
     $('a.go_a').mPageScroll2id({
         scrollSpeed: 900,
         scrollEasing: 'swing',
         scrollingEasing: 'swing',
-        offset: 80
+        offset: 50
     });
 
 //Tabs
@@ -100,8 +100,9 @@ $('.click_tile_js').on('click', function (e) {
 //Меню топ : скрол анимация
     var h = $(window).height();
  
-    if ( ($(this).scrollTop()) > 0 ) {
+    if ( ($(this).scrollTop()) > $(".menu_div").offset().top ) {
         $(".menu_div").addClass('scroll');
+        $(".menu_div_off").css('display', 'block');
     } 
 
     function go_animated_scroll() {
@@ -219,11 +220,13 @@ $('.click_tile_js').on('click', function (e) {
     go_animated_scroll();
 
     $(window).scroll(function(){
-        if ( ($(this).scrollTop()) > 0 ) {
+        if ( ($(this).scrollTop()) > $(".menu_div").offset().top  ) {
             $(".menu_div").addClass('scroll');
+            $(".menu_div_off").css('display', 'block');
         } 
-        if ( $(this).scrollTop() == 0 ) {
+        if ( $(this).scrollTop() < $(".menu_div_off").offset().top  ) {
             $(".menu_div").removeClass('scroll');
+            $(".menu_div_off").css('display', 'none');
         }
 
         go_animated_scroll();
