@@ -61,6 +61,24 @@
         scrollingEasing: 'swing',
         offset: 50
     });
+//Для мобильного 
+    var width_el = Number(document.documentElement.clientWidth);
+    if(width_el <= 1094){
+        $('.menu_top a').mPageScroll2id({
+            scrollSpeed: 900,
+            scrollEasing: 'swing',
+            scrollingEasing: 'swing',
+            offset: 100
+        });
+
+        $('a.go_a').mPageScroll2id({
+            scrollSpeed: 900,
+            scrollEasing: 'swing',
+            scrollingEasing: 'swing',
+            offset: 100
+        });
+    }
+
 
 //Tabs
 $(".tab_js." + $('.tabs_js.active').attr('data-tab')).fadeIn(200);
@@ -77,6 +95,11 @@ $('.tabs_js').on('click', function (e) {
 
     $(".tab_js." + class_tab).fadeIn(400);
     $(this).addClass('active');
+});
+
+//no-click
+$('.no-click').on('click', function (e) {
+    e.preventDefault();
 });
 
 //cards
@@ -233,11 +256,7 @@ $('.click_tile_js').on('click', function (e) {
     });
     
 
-//Для мобильного 
-    var width_el = Number(document.documentElement.clientWidth);
-    if(width_el <= 768){
-        
-    }
+
 
 
 	
