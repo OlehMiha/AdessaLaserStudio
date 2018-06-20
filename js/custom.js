@@ -245,7 +245,9 @@ $('.click_tile_js').on('click', function (e) {
         }); 
     }
 
-    go_animated_scroll();
+    if(width_el > 1094){
+        go_animated_scroll();
+    }
 
     $(window).scroll(function(){
         if ( ($(this).scrollTop()) > $(".menu_div").offset().top  ) {
@@ -257,7 +259,9 @@ $('.click_tile_js').on('click', function (e) {
             $(".menu_div_off").css('display', 'none');
         }
 
-        go_animated_scroll();
+        if(width_el > 1094){
+            go_animated_scroll();
+        }
     });
     
 

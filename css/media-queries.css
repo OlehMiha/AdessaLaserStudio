@@ -164,6 +164,14 @@
         margin-top: 8px;
         margin-bottom: 24px;
     }
+
+    .orang_div ul.content_ul li, ul.content_ul li {
+      opacity: 1;
+    }
+    ul.content_ul li:before {
+      top: 5px;
+      left: -31px;
+    }
 }
 
 
