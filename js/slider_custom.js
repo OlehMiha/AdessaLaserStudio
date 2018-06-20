@@ -34,9 +34,9 @@ $(document).ready(function(){
       fade: true,
       responsive: [
           {
-            breakpoint: 750,
+            breakpoint: 991,
             settings: {
-              dots: true,
+              dots: false,
             }
           },
       ]

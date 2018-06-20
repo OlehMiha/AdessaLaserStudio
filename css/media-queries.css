@@ -29,6 +29,9 @@
 }
 
 @media only screen and (max-width: 1094px) { 
+    .menu_div_off{
+        height: 100px; 
+    } 
     .menu_div{
         height: 100px; 
         overflow: hidden;
@@ -65,6 +68,12 @@
       display: block !important;
       visibility: visible !important;
     }
+    .mobile_off {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
+
 
     .mid_block_header, .top_block_header {
         display: none;
@@ -96,14 +105,13 @@
         width: 100%;
     }
     .menu_top ul li {
-        width: 170px;
         margin: 0 auto;
     }
     .menu_top ul li:last-child {
         margin: 0 auto;
     }
 
-    .custom_scrollbar.menu_scrollbar {
+    .menu_scrollbar {
         max-height: calc(100vh - 100px);
         min-height: calc(100vh - 100px);
         padding-bottom: 15px;
@@ -133,32 +141,157 @@
         background: #07a7e3;
         color: #fff;
     }
+
+
+
+    .video_you_tube {
+        margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .title_p_2.text-left:after {
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+
+    .block_12_iner .title_top_p_2, .block_12_iner .title_p_2 {
+        text-align: left;
+    }
+    .block_12_iner .title_p_2:after {
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
 }
 
 
 /* Большие девайсы (десктопы, <= 991px) */
 @media only screen and (max-width: 991px) { 
+    body{
+        font-size: 14px;
+    }
+    .services_p {
+        position: relative;
+        margin-bottom: 20px;
+    }
+   .services_p:before {
+        content: '';
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        display: block;
+        width: 280px;
+        height: 17px;
+        margin-left: -140px;
+        background: url(../img/tittle_bot_img_1.png) no-repeat;
+        background-position: center;
+    }
+    .services_p.last:before {
+        display: none;
+    }
 
-   
+    .block_4 .button_1,.orang_div .button_1 {
+        margin:0 auto;
+        margin-top: 30px;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .slider_akciya .button_1 {
+        left: 5px;
+        bottom: 5px;
+    }
+    .slick-dots {
+        height: 36px;
+    }
+    .img_div img {
+        margin-bottom: 20px;
+    }
+    .order_mobi {
+        order: -1;
+    }
+    .slider_akciya_right {
+        max-width: 540px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .block_1 .row:before {
+        right: 0px;
+    }
+    .block_1 {
+        padding-top: 0px;
+    }
+    .block_2,
+    .block_3, .block_4,
+    .block_5, .block_6,
+    .block_7, .block_8,
+    .block_9, .block_10,
+    .block_11, .block_12,
+    .block_13, .block_14,
+    .block_15, .block_16 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
 }
 
 @media only screen and (max-width: 930px) { 
     
 
 }
-@media only screen and (max-width: 830px) { 
-    
+@media only screen and (max-width: 860px) { 
+    .left_modal {
+        width: 100%;
+        height: 320px;
+        float: none;
+        background-position: center bottom;
+    }
+    .right_modal {
+        width: 100%;
+        float: none;
+    }
 }
 /* Средние девайсы («таблетки», <= 767px) */
 @media only screen and (max-width: 767px) { 
-    
+    .grafic_div img {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }
 
 /* Малые девайсы («ландшафтные телефоны», <= 575px) */
 @media only screen and (max-width: 575px) {
-   
+   body{
+        font-size: 13px;
+    }
+    .title_block_2 .title_top_p_2:before {
+        margin-bottom: 15px!important;
+    }
+    .title_block_2 .title_p_2:after {
+        margin-top: 10px!important;
+    }
 }
 
+@media only screen and (max-width: 500px) {
+    .slider_akciya .button_1 {
+        width: 130px;
+        height: 38px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    body{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .block_1 .title {
+        font-size: 3.15em;
+        line-height: 55px;
+    }
+}
 @media only screen and (max-width: 420px) {
    .mid_block_header_text_1, .mid_block_header_text_2 {
         max-width: 100%;
@@ -167,10 +300,30 @@
         text-align: center!important;
     }
 }
-@media only screen and (max-width: 360px) {
-    
+@media only screen and (max-width: 370px) {
+    body{
+        font-size: 11px;
+    }
+    .block_1 .button_2 {
+        width: 100%;
+        height: 45px;
+    }
+    .modal-body_1 {
+        padding-top: 33px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
 }
+@media only screen and (max-width: 350px) {
+    .block_1 .title {
+        font-size: 2.75em;
+    }
+    .social_button a {
+        margin: 0 9px;
+    }
 
+}
 /* IPhone 5 */
 @media only screen and (max-width: 320px) {
 
